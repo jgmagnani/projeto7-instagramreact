@@ -10,8 +10,8 @@ export default function Usuario() {
     }
 
     function mudarImagem() {
-        var imagem = new Image();
-        const imagem = prompt("Insira uma imagem para o perfil");
+        let imagem = new Image();
+        imagem = prompt("Insira uma imagem para o perfil");
         if (imagem){
             setImagemUsuario(imagem);
         }else{
@@ -26,7 +26,7 @@ export default function Usuario() {
                 <strong>catanacomics</strong>
                 <span data-test="name">
                     {nomeUsuario}
-                    <ion-icon name="pencil"></ion-icon>
+                    <ion-icon name="pencil" onClick={mudarNome}></ion-icon>
                 </span>
             </div>
         </div>

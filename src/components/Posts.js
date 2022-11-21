@@ -50,7 +50,11 @@ export default function Posts() {
     const [postState, setPostState] = useState(posts);
 
     function botaoCurtir(id) {
-        mudarCurtir("", id, false);
+       // mudarCurtir("", id, false);
+    }
+
+    function salvarPost(id) {
+        
     }
 
 

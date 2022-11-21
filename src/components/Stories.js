@@ -36,7 +36,7 @@ const arrayStories = [
 ];
 
 export default function Stories() {
-    Return(
+    return (
         <div className="stories">
             {arrayStories.map(itens =>
                 <Story key={itens.Nome} imagem={itens.imagem} nome={itens.Nome} />
