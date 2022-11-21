@@ -1,12 +1,17 @@
+import Posts from "./Posts"
+import SideBar from "./SideBar"
+import Stories from "./Stories"
 
 
 
-export default Corpo(){
+export default function Corpo(){
    return (
-    <div class="corpo">
-        <div class="esquerda">    
-        </div>
-        
+    <div ClassName="corpo">
+        <div ClassName="esquerda"> 
+            <Stories/>
+            <Posts/>
+        </div>        
+        <SideBar/>
     </div>
     )
 }

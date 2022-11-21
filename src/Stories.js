@@ -37,12 +37,12 @@ const arrayStories = [
 
 export default function Stories() {
     Return(
-        <div class="stories">
+        <div className="stories">
             {arrayStories.map(itens =>
                 <Story key={itens.Nome} imagem={itens.imagem} nome={itens.Nome} />
             )}
 
-            <div class="setinha">
+            <div className="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>
