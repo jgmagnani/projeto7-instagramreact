@@ -14,8 +14,8 @@ export default function Posts() {
             nome: "meowed",
             imagem: require("../assets/img/gato-telefone.svg").default,
             imagemCurtida: require("../assets/img/respondeai.svg").default,
-            curtida:  <ion-icon name="heart-outline" onClick={function () { botaoCurtir(1); }}></ion-icon>,
-            salvar: <ion-icon name="bookmark-outline" onClick={function () { salvarPost(1); }}></ion-icon>,
+            curtida:  <ion-icon name="heart-outline" onClick={function () { botaoCurtir(1); }} data-test="like-post"></ion-icon>,
+            salvar: <ion-icon name="bookmark-outline" onClick={function () { salvarPost(1); }} data-test="save-post"></ion-icon>,
             classe: "saved-posts",
             liked: "respondeai",
             textoLike: <div className="texto">Curtido por <strong>respondeai</strong> e <strong data-test="likes-number">outras {(numCurtidasNew[0]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
@@ -27,8 +27,8 @@ export default function Posts() {
             nome: "barked",
             imagem: require("../assets/img/dog.svg").default,
             imagemCurtida: require("../assets/img/adorable_animals.svg").default,  
-            curtida:  <ion-icon name="heart-outline" onClick={function () { botaoCurtir(2); }}></ion-icon>,
-            salvar: <ion-icon name="bookmark-outline" onClick={function () { salvarPost(2); }}></ion-icon>,
+            curtida:  <ion-icon name="heart-outline" onClick={function () { botaoCurtir(2); }} data-test="like-post"></ion-icon>,
+            salvar: <ion-icon name="bookmark-outline" onClick={function () { salvarPost(2); }} data-test="save-post"></ion-icon>,
             classe: "saved-posts",
             liked: "adorable_animals",
             textoLike: <div className="texto">Curtido por <strong>adorable_animals</strong> e <strong data-test="likes-number">outras {(numCurtidasNew[1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
@@ -39,8 +39,8 @@ export default function Posts() {
             nome: "driven.education",
             imagem: require("../assets/img/dog.svg").default,
             imagemCurtida: require("../assets/img/adorable_animals.svg").default,
-            curtida:  <ion-icon name="heart-outline" onClick={function () { botaoCurtir(3); }}></ion-icon>,
-            salvar: <ion-icon name="bookmark-outline" onClick={function () { salvarPost(3); }}></ion-icon>,
+            curtida:  <ion-icon name="heart-outline" onClick={function () { botaoCurtir(3); }} data-test="like-post"></ion-icon>,
+            salvar: <ion-icon name="bookmark-outline" onClick={function () { salvarPost(3); }} data-test="save-post"></ion-icon>,
             classe: "saved-posts",
             liked: "driven.education",
             textoLike: <div className="texto">Curtido por <strong>driven.education</strong> e <strong data-test="likes-number">outras {(numCurtidasNew[2]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
