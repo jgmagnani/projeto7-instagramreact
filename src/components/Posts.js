@@ -35,10 +35,10 @@ export default function Posts() {
         },
         {
             id: 3,
-            iconeImagem: "https://scontent.fmoc4-1.fna.fbcdn.net/v/t39.30808-6/227475572_126738002977669_128015777806440481_n.png?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFxPVDFLq4_s-2lHvbVnKE5joVt9-QlfVSOhW335CV9VG6Voe61FJv4-8SN9rCBes6xM-rvubYoJrLAW78kKDGz&_nc_ohc=6vvroJ7XxgUAX_Cu7QI&_nc_ht=scontent.fmoc4-1.fna&oh=00_AfDrRyBjJc5Bitt24G2xOCvlnmsoLBE2b7KZeKTSJM7G5A&oe=637F4CD7",
+            iconeImagem: require("../assets/img/barked.svg").default,
             nome: "driven.education",
-            imagem: "https://scontent.fmoc4-1.fna.fbcdn.net/v/t39.30808-6/309450913_413226097662190_7440088751221015583_n.png?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFyrtbFRniahmWpqjx5HDcq8dYD4Ne44Kbx1gPg17jgplpomy3CEk4pc7h-SaBu4NDS0UCgNecZd3NUKjMXiFXj&_nc_ohc=5QXkliA9O9cAX_KFIQ7&_nc_ht=scontent.fmoc4-1.fna&oh=00_AfA_FOerTrta6m0rmfV6QsaoWc0_LkP7euLLEMYCVVXs2Q&oe=637EC607",
-            imagemCurtida: "https://scontent.fmoc4-1.fna.fbcdn.net/v/t39.30808-6/227475572_126738002977669_128015777806440481_n.png?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFxPVDFLq4_s-2lHvbVnKE5joVt9-QlfVSOhW335CV9VG6Voe61FJv4-8SN9rCBes6xM-rvubYoJrLAW78kKDGz&_nc_ohc=6vvroJ7XxgUAX_Cu7QI&_nc_ht=scontent.fmoc4-1.fna&oh=00_AfDrRyBjJc5Bitt24G2xOCvlnmsoLBE2b7KZeKTSJM7G5A&oe=637F4CD7",           
+            imagem: require("../assets/img/dog.svg").default,
+            imagemCurtida: require("../assets/img/adorable_animals.svg").default,
             curtida:  <ion-icon name="heart-outline" onClick={function () { botaoCurtir(3); }}></ion-icon>,
             salvar: <ion-icon name="bookmark-outline" onClick={function () { salvarPost(3); }}></ion-icon>,
             classe: "saved-posts",
